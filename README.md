@@ -7,6 +7,8 @@
 
 vue2 + vue-router + vue-resource + webpack + express + Node爬虫
 
+将项目使用vuex作数据流改造。
+
 ## 后台接口数据
 
 ​用express 搭建的后台，除了图文、阅读、音乐页面的列表是读取的本地json文件外，首页以及其他详情数据都是用爬虫爬取得[ONE.一个]网站的数据[注：这里爬取数据只是一个练习，练习而已，并没有非法使用爬来的数据呀 :scared:  ]。
