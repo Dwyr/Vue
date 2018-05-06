@@ -1,7 +1,9 @@
+@import '../font/iconfont.css';
+
 *{padding: 0;margin:0;}
 html{
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   max-width: 768px;
   overflow: hidden;
@@ -80,7 +82,7 @@ span,i{display: inline-block;}
 .one-title{
   display: inline-block;
   font-size: .35rem;
-  flex-grow:1; 
+  flex-grow:1;
   text-align: center;
 }
 .header i{
@@ -115,27 +117,54 @@ span,i{display: inline-block;}
 }
 /***menu***/
 .one-menu{
-  width: 3rem;
-  height: 100vh;
-  position: absolute;
-  top: 0;
+width: 100%;
+  /* height: 100vh; */
+  height: 50px;
+  position:fixed;
+  bottom: 0;
   /*opacity: 0;*/
-  left: calc(-3rem - 10px); 
+/* left: calc(-3rem - 10px);  */
   background: #fff;
-  box-shadow: 4px -2px 16px 0px #adabab;
+  border-top: 1px solid #e2e2e2;
+  /* box-shadow: 4px -2px 16px 0px #adabab; */
   text-align: center;
-  padding-top: .6rem;
   box-sizing: border-box;
   z-index: 99;
 }
 .link-to{
   display: inline-block;
-  padding: .1rem .3rem;
-  width: 2.4rem;
-  font-size: .3rem;
-  line-height: .7rem;
+  width: 24%;
+  height: 50px;
+  line-height: 50px;
+  font-size: .1rem;
   text-decoration: none;
   color: #333;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  }
+  .link-to.selected {
+    color: red;
+  }
+  .iconfont {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .icon-shouye::before, .icon-tuwenliebiao::before,.icon-yinle::before,.icon-daohanglan-05::before {
+    position: absolute;
+    top: -12px;
+    width: 16px;
+    height: 16px;
+    left: -11px;
+  }
+  .span-tile {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
   }
 /***home***/
 .home-bg{
@@ -147,7 +176,7 @@ span,i{display: inline-block;}
   box-sizing: border-box;
   color:#fff;
 }
-.home-content{ 
+.home-content{
   padding: .5rem;
   margin-bottom: 1.3rem;
 }

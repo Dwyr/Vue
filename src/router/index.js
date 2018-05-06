@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import VueResource from 'vue-resource'
 
 var home = require("../pages/home.vue")
-var picture = require("../pages/picture.vue")
+var picture = require("../pages/pictureComp.vue")
 var read = require("../pages/read.vue")
 var music = require("../pages/music.vue")
 var movie = require("../pages/movie.vue")
@@ -14,7 +14,7 @@ var pictureDetail = require("../components/pictureDetail.vue")
 var questionDetail = require("../components/questionDetail.vue")
 
 var routes = [
-	{path:"/",component:home},
+	{path:"/",component:read},
 	{path:"/picture",component:picture},
 	{path:"/read",component:read},
 	{path:"/music",component:music},
